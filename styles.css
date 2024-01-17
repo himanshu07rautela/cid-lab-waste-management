@@ -1,0 +1,177 @@
+body {
+    font-family: 'Fredoka One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(237, 230, 230);
+}
+hr {
+    border: 0; /* Remove default border */
+    height: 10px; /* Set the height of the line */
+    background: linear-gradient(to right, 
+                #f0f0f0 10%, 
+                #d9d9d9 30%, 
+                #bfbfbf 50%, 
+                #d9d9d9 70%, 
+                #f0f0f0 90%); /* Use gradient with shades of grey */
+    margin: 30px 0; /* Add some spacing above and below the line */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+#top{
+    font-size: 80px;
+    font-family: 'Fredoka One', sans-serif;
+    letter-spacing: 2px;
+}
+.sub{
+   text-align: center;
+    font-size: 65px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+
+}
+.sub:hover{
+    color: #2d2c41; 
+    text-decoration: underline;
+}
+.idpic{
+    height: 500px;
+    width: 700px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease; /* Add a smooth transition effect to the color */
+}
+
+nav a:hover {
+    color: #ffd700; /* Change the color on hover, you can adjust this to your preference */
+}
+
+main {
+    /* text-align: center; */
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+#mobileNavButton{
+    opacity: 0; /* Show the button in mobile view */
+    margin: 1em auto; /* Adjust the margin as needed */
+    background-color: #444;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#team {
+    text-align: center;
+    padding: 2em;
+}
+
+#team h2 {
+    color: #333;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    margin-top: 20px;
+    flex: 0 0 45%; /* Adjust the width of each team member card */
+}
+
+.team-member img {
+    height: 350px;
+    width: 300px; /* Adjust the image width as needed */
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Additional styling for team member details (name, role, bio) */
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.team-member p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+@media only screen and (max-width: 600px) {
+    #top{
+        font-size: 20px;
+    }
+    .sub{
+        font-size: 15px;
+        
+    
+    }
+    .idpic{
+        height: 200px;
+        width:300px
+    }
+    
+    nav {
+        display: none; /* Hide the navigation menu in mobile view */
+    }
+
+    #mobileNavButton {
+        opacity: 100%;
+        display: block; /* Show the button in mobile view */
+        margin: 1em auto; /* Adjust the margin as needed */
+        background-color: #444;
+        color: white;
+        padding: 0.5em 1em;
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+    #team {
+        padding: 1em;
+    }
+
+    .team-members {
+        display: block;
+    }
+
+    .team-member {
+        margin: 0 auto 20px;
+        flex: none;
+    }
+}
